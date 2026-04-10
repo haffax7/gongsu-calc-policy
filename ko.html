@@ -3,145 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>개인정보처리방침 — WorkdayCalc</title>
+  <title>WorkdayCalc - 약관 및 정책</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 15px;
-      line-height: 1.8;
-      color: #333;
-      background: #f9f9f9;
-    }
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      background: #fff;
-      min-height: 100vh;
-    }
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #111;
-    }
-    .meta {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 17px;
-      font-weight: 700;
-      margin-top: 36px;
-      margin-bottom: 10px;
-      color: #111;
-      border-left: 3px solid #4CAF88;
-      padding-left: 10px;
-    }
-    p { margin-bottom: 10px; }
-    ul {
-      padding-left: 20px;
-      margin-bottom: 10px;
-    }
-    li { margin-bottom: 4px; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 12px 0;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid #e0e0e0;
-      padding: 10px 12px;
-      text-align: left;
-    }
-    th {
-      background: #f5f5f5;
-      font-weight: 600;
-    }
-    .footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #888;
-    }
-    a { color: #4CAF88; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.75; }
+    header { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 20px 24px; text-align: center; position: relative; }
+    header h1 { font-size: 22px; font-weight: 700; color: #1d1d1f; }
+    header p { font-size: 14px; color: #6e6e73; margin-top: 4px; }
+    .lang-switch { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); }
+    .lang-switch a { display: inline-block; text-decoration: none; font-size: 13px; font-weight: 600; color: #1a73e8; background: #e8f0fe; border-radius: 20px; padding: 4px 14px; }
+    .container { max-width: 720px; margin: 32px auto; padding: 0 16px 60px; }
+    .card { background: #fff; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .intro { font-size: 15px; color: #3a3a3c; }
+    h2 { font-size: 20px; font-weight: 700; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; color: #1d1d1f; }
+    h2:first-of-type { margin-top: 0; }
+    h3 { font-size: 16px; font-weight: 600; margin: 20px 0 8px; color: #3a3a3c; }
+    p { font-size: 15px; color: #3a3a3c; margin-bottom: 10px; }
+    ul { margin: 8px 0 12px 4px; padding-left: 0; list-style: none; }
+    ul li { font-size: 15px; color: #3a3a3c; padding: 4px 0 4px 20px; position: relative; }
+    ul li::before { content: '•'; position: absolute; left: 4px; color: #8e8e93; }
+    .highlight { display: inline-block; background: #f0f0f5; border-radius: 6px; padding: 2px 10px; font-size: 14px; font-weight: 600; color: #1d1d1f; margin: 4px 0; }
+    .section-divider { height: 1px; background: #f0f0f0; margin: 28px 0; }
+    .tag { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 12px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }
+    .contact-box { background: #f5f5f7; border-radius: 10px; padding: 16px 20px; margin-top: 8px; }
+    .contact-box a { color: #1a73e8; text-decoration: none; font-weight: 600; }
+    footer { text-align: center; font-size: 13px; color: #8e8e93; margin-top: 40px; }
   </style>
 </head>
 <body>
+
+<header>
+  <h1>WorkdayCalc</h1>
+  <p>약관 및 정책</p>
+  <div class="lang-switch"><a href="en.html">English</a></div>
+</header>
+
 <div class="container">
 
-  <h1>개인정보처리방침</h1>
-  <p class="meta">앱명: WorkdayCalc &nbsp;·&nbsp; 시행일: 2025년 1월 1일 &nbsp;·&nbsp; 최종 수정일: 2025년 1월 1일</p>
-
-  <p>WorkdayCalc(이하 "앱")은 이용자의 개인정보를 중요하게 여기며, 「개인정보 보호법」 및 관련 법령을 준수합니다. 본 방침은 앱이 수집하는 개인정보의 항목, 수집 목적, 보유 기간, 제3자 제공 여부 등을 안내합니다.</p>
-
-  <h2>1. 수집하는 개인정보 항목</h2>
-  <table>
-    <tr><th>항목</th><th>수집 시점</th><th>목적</th></tr>
-    <tr><td>이름(닉네임), 이메일 주소</td><td>회원가입 / 소셜 로그인</td><td>계정 식별 및 서비스 제공</td></tr>
-    <tr><td>프로필 사진</td><td>사용자가 직접 업로드</td><td>프로필 표시</td></tr>
-    <tr><td>공수 기록, 근무 일정</td><td>앱 사용 중</td><td>공수 계산 및 통계 제공</td></tr>
-    <tr><td>게시글, 댓글, 채팅 메시지</td><td>앱 사용 중</td><td>커뮤니티 및 채팅 서비스 제공</td></tr>
-    <tr><td>기기 식별자(FCM 토큰)</td><td>앱 실행 시</td><td>푸시 알림 발송</td></tr>
-    <tr><td>오류 로그, 기기 정보</td><td>앱 오류 발생 시</td><td>앱 안정성 개선(Firebase Crashlytics)</td></tr>
-  </table>
-
-  <h2>2. 개인정보 수집 및 이용 목적</h2>
-  <ul>
-    <li>회원 가입 및 본인 확인</li>
-    <li>공수 계산, 근무 일정 관리 등 핵심 서비스 제공</li>
-    <li>게시판 및 1:1 채팅 서비스 제공</li>
-    <li>푸시 알림(새 메시지, 공지사항 등) 발송</li>
-    <li>앱 오류 분석 및 서비스 품질 개선</li>
-  </ul>
-
-  <h2>3. 개인정보 보유 및 이용 기간</h2>
-  <p>이용자가 회원 탈퇴를 요청하거나 수집·이용 목적이 달성된 시점에 즉시 파기합니다. 단, 관련 법령에 의해 보존이 필요한 경우 해당 기간 동안 보관합니다.</p>
-  <ul>
-    <li>계약 또는 청약철회 등에 관한 기록: 5년 (전자상거래법)</li>
-    <li>소비자 불만 또는 분쟁 처리에 관한 기록: 3년 (전자상거래법)</li>
-  </ul>
-
-  <h2>4. 개인정보의 제3자 제공</h2>
-  <p>앱은 이용자의 동의 없이 개인정보를 제3자에게 제공하지 않습니다. 단, 아래의 경우는 예외입니다.</p>
-  <ul>
-    <li>이용자가 사전에 동의한 경우</li>
-    <li>법령에 의거하거나 수사기관의 요청이 있는 경우</li>
-  </ul>
-
-  <h2>5. 개인정보 처리 위탁</h2>
-  <p>앱은 서비스 운영을 위해 아래 업체에 개인정보 처리를 위탁합니다.</p>
-  <table>
-    <tr><th>수탁 업체</th><th>위탁 업무</th></tr>
-    <tr><td>Google LLC (Firebase)</td><td>인증, 데이터베이스, 파일 저장, 푸시 알림, 오류 분석</td></tr>
-  </table>
-  <p>위탁 업체의 개인정보 처리방침: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-
-  <h2>6. 이용자의 권리</h2>
-  <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
-  <ul>
-    <li>개인정보 열람, 수정, 삭제 요청</li>
-    <li>개인정보 처리 정지 요청</li>
-    <li>회원 탈퇴(앱 내 설정 메뉴에서 직접 가능)</li>
-  </ul>
-  <p>권리 행사는 아래 이메일로 요청하시면 지체 없이 처리합니다.</p>
-
-  <h2>7. 개인정보 보호책임자</h2>
-  <ul>
-    <li>이메일: <a href="mailto:haffax7@gmail.com">haffax7@gmail.com</a></li>
-  </ul>
-
-  <h2>8. 개인정보처리방침 변경</h2>
-  <p>본 방침은 법령·서비스 변경 시 개정될 수 있습니다. 변경 시 앱 내 공지사항 또는 이 페이지를 통해 고지합니다.</p>
-
-  <div class="footer">
-    <p>© 2025 WorkdayCalc. All rights reserved.</p>
+  <div class="card">
+    <p class="intro">이 페이지에는 WorkdayCalc 애플리케이션의 서비스 이용약관 및 개인정보 처리방침이 포함되어 있습니다.<br>계정을 생성하거나 서비스를 이용함으로써 사용자는 아래에 설명된 이용약관과 개인정보 처리방침에 동의하게 됩니다.</p>
   </div>
+
+  <div class="card">
+    <span class="tag">서비스 이용약관</span>
+
+    <h2>1. 서비스 설명</h2>
+    <p>WorkdayCalc는 건설 및 일용직 근무자의 공수 기록, 근무 일정 관리, 일자리 정보 공유를 돕는 서비스입니다.</p>
+    <p>서비스의 주요 기능은 다음과 같습니다:</p>
+    <ul>
+      <li>일별 공수 입력 및 통계 확인</li>
+      <li>현장(사이트) 별 근무 기록 관리</li>
+      <li>일자리 게시판 운영</li>
+      <li>1:1 채팅</li>
+      <li>클라우드 기반 데이터 동기화 및 백업</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>2. 계정 등록</h2>
+    <p>사용자는 이메일 인증 또는 Google, Apple 소셜 로그인을 통해 계정을 생성할 수 있습니다.</p>
+    <p>사용자는 다음 사항에 동의합니다:</p>
+    <ul>
+      <li>정확하고 완전한 정보를 제공할 것</li>
+      <li>계정 보안을 유지할 것</li>
+      <li>자신의 계정을 통해 이루어지는 활동에 대한 책임을 질 것</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>3. 계정 삭제</h2>
+    <p>사용자는 앱 내 메뉴를 통해 언제든지 계정을 삭제할 수 있습니다:</p>
+    <p><span class="highlight">사이드 메뉴 &gt; 회원 탈퇴</span></p>
+    <p>계정이 삭제되면 다음과 같은 조치가 이루어집니다:</p>
+    <ul>
+      <li>계정과 관련된 모든 개인 데이터가 영구적으로 삭제됩니다</li>
+      <li>사용자가 작성한 게시글 및 채팅 메시지가 삭제됩니다</li>
+      <li>업로드된 프로필 이미지가 저장소에서 삭제됩니다</li>
+      <li>근무 기록 및 공수 데이터가 삭제됩니다</li>
+    </ul>
+    <p>삭제된 데이터는 복구할 수 없습니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>4. 허용되는 사용</h2>
+    <p>사용자는 다음 행위를 하지 않을 것에 동의합니다:</p>
+    <ul>
+      <li>다른 사람을 사칭하는 행위</li>
+      <li>허위 또는 오해의 소지가 있는 정보 게시</li>
+      <li>서비스 운영을 방해하는 행위</li>
+      <li>불법적인 목적으로 서비스 이용</li>
+      <li>다른 사용자의 권리를 침해하는 행위</li>
+      <li>욕설, 혐오 표현, 스팸성 게시물 작성</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>5. 서비스 제공</h2>
+    <p>회사는 시스템 유지보수, 기술적 장애, 보안 문제 등의 사유로 서비스를 일시적으로 중단하거나 변경할 수 있습니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>6. 책임의 제한</h2>
+    <p>법률이 허용하는 최대 범위 내에서 회사는 사용자의 잘못된 입력, 사용자 간의 분쟁, 기기 문제, 제3자 인프라로 인한 서비스 중단에 대해 책임을 지지 않습니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>7. 지적 재산권</h2>
+    <p>소프트웨어, 디자인 및 관련 콘텐츠를 포함한 서비스의 모든 권리는 회사에 있으며 관련 지적 재산권 법률에 의해 보호됩니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>8. 준거법</h2>
+    <p>본 약관은 대한민국 법률에 따라 규율됩니다.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">개인정보 처리방침</span>
+
+    <h2>1. 수집하는 정보</h2>
+
+    <h3>계정 정보</h3>
+    <ul>
+      <li>이메일 주소, 닉네임, 프로필 사진</li>
+      <li>고유 사용자 식별자 (UID)</li>
+      <li>인증 제공자 정보 (Google, Apple, 이메일)</li>
+    </ul>
+    <p>비밀번호는 Firebase Authentication을 통해 안전하게 암호화되어 관리됩니다.</p>
+
+    <h3>서비스 데이터</h3>
+    <ul>
+      <li>일별 공수 기록 및 근무 일정</li>
+      <li>현장(사이트) 정보</li>
+      <li>게시글, 댓글, 1:1 채팅 메시지</li>
+    </ul>
+
+    <h3>자동 수집 정보</h3>
+    <ul>
+      <li>기기 식별자 (FCM 토큰, 푸시 알림 목적)</li>
+      <li>기기 모델 및 운영체제 버전</li>
+      <li>앱 오류 로그 및 크래시 보고서 (Firebase Crashlytics)</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>2. 정보의 이용 목적</h2>
+    <ul>
+      <li>사용자 인증 및 계정 관리</li>
+      <li>공수 계산 및 근무 일정 관리 서비스 제공</li>
+      <li>게시판 및 1:1 채팅 서비스 제공</li>
+      <li>푸시 알림 발송 (새 메시지, 공지사항 등)</li>
+      <li>앱 오류 분석 및 서비스 품질 개선</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>3. 데이터 보관 및 삭제</h2>
+    <p>개인 데이터는 사용자 계정이 활성 상태인 동안 보관됩니다. 계정 삭제 시 모든 데이터가 영구 삭제됩니다.</p>
+    <p><span class="highlight">사이드 메뉴 &gt; 회원 탈퇴</span></p>
+
+    <div class="section-divider"></div>
+
+    <h2>4. 제3자 서비스</h2>
+    <h3>Google Firebase</h3>
+    <ul>
+      <li>Authentication — 사용자 인증</li>
+      <li>Cloud Firestore — 데이터 저장</li>
+      <li>Cloud Storage — 프로필 이미지 저장</li>
+      <li>Firebase Messaging — 푸시 알림</li>
+      <li>Firebase Crashlytics — 오류 분석</li>
+    </ul>
+    <p>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+    <div class="section-divider"></div>
+
+    <h2>5. 데이터 공유</h2>
+    <p>회사는 개인정보를 제3자에게 판매, 임대 또는 공유하지 않습니다. 법률에 의해 요구되는 경우에만 공개될 수 있습니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>6. 사용자 권리</h2>
+    <ul>
+      <li>개인정보 열람, 수정, 삭제 요청</li>
+      <li>앱 내에서 직접 계정 삭제</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>7. 데이터 보안</h2>
+    <ul>
+      <li>HTTPS 암호화 통신</li>
+      <li>Firebase 보안 규칙을 통한 접근 통제</li>
+      <li>안전한 클라우드 인프라</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>8. 아동의 개인정보 보호</h2>
+    <p>본 서비스는 보호자 또는 법정 대리인의 동의 없이 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>9. 문의</h2>
+    <p>본 약관 또는 개인정보 처리방침에 대한 문의는 아래 이메일로 연락해 주시기 바랍니다.</p>
+    <div class="contact-box">
+      <a href="mailto:haffax7@gmail.com">haffax7@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 WorkdayCalc. All rights reserved.</p>
+  </footer>
 
 </div>
 </body>
